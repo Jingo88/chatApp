@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="chatC.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif:700italic' rel='stylesheet' type='text/css'>
+            <title>ASL</title>
+        </head>
+        <body>
+            <h1>Dungeons and Dragons</h1>
+            <h3>Pathfinder</h3>
+            <div id='allThings'>
+                <div id='chatStuff'>
+
+                    <div id='theBox'>
+                        <ul id='chatroom'>
+                        </ul>
+                    </div>
+
+                    <input type='text' id='userMsg' placeholder='Say Something To Party Members'></input>
+                    <button id='submit'> Roll Dice </button>
+                    
+                    <select id='userFile'>
+                        <option value='none'>Attach a link?</option>
+                        <option value="image">Image</option>
+                        <option value="video">Video</option>
+                        <option value="gif">Gif</option>
+                    </select>
+                    <input type='text' id='fileAttach' placeholder='Input Link for Chat Images and Gifs'></input>
+                </div>
+
+                <div id='partyList'>
+                    <button id='logout'> Logout </button>
+                    
+                    <h3>Party Members</h3>
+                    <ul id='knownUsers'></ul>
+                </div>
+
+            </div>
+            <script type ='text/javascript' src="Autolinker.js/src/Autolinker.js"></script>
+            <script type='text/javascript' src='chatC.js'>
+            </script>
+
+        </body>
+    </html>
